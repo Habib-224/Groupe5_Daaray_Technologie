@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color : #3E3E3E;
+}
+
+body{
+    background-color: white;
+}
+
+.First_Menu{
+    background-color: var(--main-color);
+    padding: 0.3em;
+    border-bottom: 1px solid darkgray;
+}
+
+.First_Menu ul{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    color: white;
+    list-style: none;
+}
+
+.First_Menu ul li{
+    margin-top: 7px;
+}
+
+.First_Menu ul li:last-child{
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+
+.First_Menu ul li:last-child i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.First_Menu ul li:nth-child(2) i,.First_Menu ul li:nth-child(3) i{
+    padding-left: 0.7em;
+}
+
+.First_Menu ul li:nth-child(2), .First_Menu ul li:nth-child(3){
+    border-left: 2px solid white;
+    /* padding-left: 0.4em; */    
+}
+
+
+/* Ajout animation icone */
+/* Fin animation icone */
+/* Fin First-Menu */
+
+/* Debut Section Second Menu */
+
+.Second_Menu{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.Second_Menu ul{
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+    color: black;
+    list-style: none;
+    padding: 1.5em;
+}
+
+.Second_Menu ul li:first-child{
+    position: absolute;
+    left: 0;
+    margin-left: 40px;
+}
+
+.Second_Menu ul li:last-child{
+    margin-right: 25px;
+}
+
+.Second_Menu ul li:last-child{
+    background-color: #3E3E3E;
+    padding: 0.5em;
+    color: white;
+    width: 180px;
+    text-align: center;
+    margin-top: -4px;
+
+}
+
+.container_banner{
+    background-image: url('../public/images/libassone.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    margin-top: -20px;
+}
+
+/* Fin Section Second Menu */
