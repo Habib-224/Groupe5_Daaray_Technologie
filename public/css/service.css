@@ -1,0 +1,30 @@
+.card.hover_text{
+    display: none;
+    height: 100%;
+    text-align: center;
+    font-size: 19px;
+    background-color: #3e3e3e;
+    
+    /* width: 100%; */
+    color: #fff;
+    font-family: 'Times New Roman',serif;
+}
+.card-body:hover .card.hover_text{
+    display: block;
+    position: absolute;
+    top: -1%;
+    right: 1%;
+    
+}
+.hover_text a{
+   text-decoration: none;
+    /* background-color: #3e3e3e; */
+    color: #fff;
+    
+}
+.card.hover_text .card{
+    background-color:#3e3e3e;
+    color: #fff;
+    border: none;
+    height: 100%;
+}
