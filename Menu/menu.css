@@ -90,4 +90,14 @@ body{
 
 }
 
+.container_banner{
+    background-image: url('../public/images/libassone.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    margin-top: -20px;
+}
+
 /* Fin Section Second Menu */
