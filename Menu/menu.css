@@ -314,4 +314,38 @@ footer hr{
      color: black;
  }
 
+ @media screen and (max-width:700px) {
+    .Container_Newsletters{
+        display: flex;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+    }
+    .Section_Newsletter_icone{
+        display: none;
+    }
+
+    .Section_Newsletter_input input{
+        margin-bottom: 10px;
+        max-width: 300px;
+    }
+
+    .Section_Newsletter_input button{
+        display: block;
+        margin: auto;
+    }
+
+    
+
+    .Container_Footer{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+    
+ }
+
 /* Fin Section SideBar */
