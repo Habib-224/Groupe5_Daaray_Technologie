@@ -93,3 +93,181 @@
     width: auto;
     height: 180px;
 }
+
+.Container_Content_filtre p:hover{
+    cursor: pointer;
+}
+
+.Container_Section_Online{
+    width: 100%;
+    height: auto;
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: center;
+    padding: 3em;
+    /* align-items: center; */
+}
+
+.Online_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.Online_left_img img, .Online_left_img_3 img{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+#formation{ 
+    font-weight: bold;
+    border-left: 3px solid black;
+    text-underline-offset: 5px;
+}
+
+.Online_Right button{
+    background-color: var(--main-color);
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width:700px) {
+    .Container_Section_Online{
+        width: 100%;
+        height: auto;
+        background-color: #D9D9D9;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        padding: 3em;
+        /* align-items: center; */
+    }
+
+    .Online_left{
+        margin-bottom: 30px;
+    }
+}
+
+
+.Temoignage_Card{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Card_Temoignage{
+    width: 320px;
+    height: 420px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+}
+
+.Card_Temoignage p{
+    text-align: justify;
+    width: 300px;
+    line-height: 30px;
+    
+}
+
+.Temoignage_img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.Card_Temoignage p{
+    padding-left: 1.5em;
+    font-size: 16;
+}
+
+.Container_Section_Temoignage h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#apprenants{
+    text-align: center;
+}
+
+.Temoignage_img i{
+    color: darkorange;
+    font-size: 12px;
+}
+
+.Container_Banner_Stat .Banner_Stat{
+    /* background-image:url('../images/Accueil/bannierestat.png'); */
+    background-image:url('../images/Accueil/bannierestat.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 450px;
+    margin-top: 40px;
+}
+
+.Team_Card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.Card_Team{
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+}
+
+.Card_Team img{
+    display: block;
+    margin: auto;
+    padding-top: 3em;
+}
+
+.Card_Team h6{
+    margin-top: 10px;
+}
+
+.Card_Team h6,.Card_Team p{
+    text-align: center;
+}
+
+.Team_Icone p {
+    text-align: center;
+}
+
+.Team_Icone p i{
+    margin-right: 10px;
+}
+
+.Card_Team hr{
+    width: 60%;
+    display: block;
+    margin: auto;
+    color: #D7B87B;
+    border: 2px solid #D7B87B;
+}
+
+.Container_Section_Team h3{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
