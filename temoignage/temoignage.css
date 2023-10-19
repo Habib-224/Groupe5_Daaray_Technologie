@@ -129,6 +129,7 @@
 @media (max-width: 768px) {
     .containertemoignage .banniere{
         padding-top: 35%;
+        margin-top: -60%;
     }
     .containertemoignage .banniere .retour{
         margin-top: 35%;
@@ -158,6 +159,13 @@
     }
 }
 @media (min-width: 769px) and (max-width:1200px){
+    .containertemoignage .banniere{
+        padding-top: 25%;
+        margin-top: -55%;
+    }
+    .containertemoignage .banniere .retour{
+        margin-top: 15%;
+    }
     .containertemoignage .bloctemoignage .pagination .prec{
         width: 60%;
         height: 5vh;
@@ -167,5 +175,15 @@
         width: 60%;
         height: 5vh;
         font-size: 25px;
+    }
+    /* .containertemoignage .bloctemoignage .temoignage .toptemoignage .card .cardtop {
+        width: 28vh;
+      border: 2px solid red;
+      margin-right: 20% !important;
+    } */
+    .containertemoignage .bloctemoignage .temoignage .toptemoignage .card .cardtop  img{
+        width: 8vh;
+        height: 8vh;
+        margin-top: 5%;
     }
 }
