@@ -67,6 +67,11 @@ body{
     height: 80px; /* Spécifiez une hauteur */
 }
 
+.Second_Menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
 .Second_Menu ul{
     display: flex;
     justify-content: end;
@@ -270,6 +275,11 @@ footer hr{
         align-items: center;
     }
 }
+
+.Container_Footer a{
+    text-decoration: none;
+    color: white;
+}
 /* Fin Section Footer */
 
 /* Debut Menu SideBar */
@@ -313,6 +323,8 @@ footer hr{
      text-decoration: none;
      color: black;
  }
+
+
 
  @media screen and (max-width:700px) {
     .Container_Newsletters{
