@@ -7,9 +7,143 @@
     <link rel="stylesheet" href="realisation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
  
 </head>
 <body>
+    <header></header>
+    <main class="containerrealisation">
+        <div class="banniere">
+            <h1>Nos réalisations</h1>
+            <p>Nous façonnons l'avenir numérique avec des solutions qui vont au-delà des attentes. Découvrez comment notre expertise a transformé des idées en succès concrets.</p>
+            <a class="retour" href="../Accueil/accueil.html">Accueil / réalisation</a>
+        </div>
+        <div class="blocrealisation">
+            <h3>Toutes nos réalisations</h3>
+            <div class="input">
+                <i class="fa-solid fa-magnifying-glass" style="color: #3e3e3e;"></i>
+                <input type="text" id="searchInput">
+            </div>
+            <div class="realisation"  id="bloc1">
+                <div class="toprealisation">
+                    <div class="premierimage item">
+                        <h5 class="titre">Portfolio tapis rouge</h5>
+                        <img src="../public/images/realisations/portfolio.png" class="port" alt="">
+                    </div>
+                    <div class="deuxiemeimage item">
+                        <h5>Site de vente  pour SHEIN</h5>
+                        <img src="../public/images/realisations/shopping.png" class="port" alt="">
+                    </div>
+                    <div class="troisiemeimage item">
+                        <h5>E-learning pour Simplon</h5>
+                        <img src="https://img.freepik.com/vecteurs-libre/publication-facebook-technologie-minimale-conception-plate_23-2149150491.jpg?size=620&ext=jpg"  class="port3" alt="">
+                    </div>
+                    
+                </div>
+                <div class="middlerealisation">
+                    <div class="first item">
+                        <h5>Site de voyage  pour Cross</h5>
+                        <img src="../public/images/realisations/voyage.png" alt="">
+                    </div>
+                    <div class="second item">
+                        <h5>Site de vente de voiture pour Audi</h5>
+                        <img src="../public/images/realisations/auto.png" alt="">
+                    </div>
+                </div>
+                <div class="bottomrealisation">
+                    <div class="first item">
+                        <h5>Formation des developppeurs à Numerika</h5>
+                        <img src="../public/images/realisations/accompagnement.png" alt="">
+                    </div>
+                    <div class="second item">
+                        <h5>Site de Business pour flextech</h5>
+                        <img src="../public/images/realisations/business.png" alt="">
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="realisation " id="bloc2">
+                <div class="toprealisation">
+                    <div class="premierimage item">
+                        <h5 class="titre">Portfolio tapis rouge</h5>
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-portfolio-template_52683-79648.jpg?size=626&ext=jpg&ga=GA1.1.410106095.1694595730&semt=ais" class="port" alt="">
+                    </div>
+                    <div class="deuxiemeimage item">
+                        <h5>Site de vente  pour SHEIN</h5>
+                        <img src="https://img.freepik.com/free-psd/e-commerce-platform-landing-page_23-2149958799.jpg?size=626&ext=jpg&ga=GA1.1.410106095.1694595730&semt=ais" class="port" alt="">
+                    </div>
+                    <div class="troisiemeimage item">
+                        <h5>E-learning pour Simplon</h5>
+                        <img src="https://img.freepik.com/vecteurs-libre/publication-facebook-technologie-minimale-conception-plate_23-2149150491.jpg?size=620&ext=jpg"  class="port3" alt="">
+                    </div>
+                    
+                </div>
+                <div class="middlerealisation">
+                    <div class="first item">
+                        <h5>Site de voyage  pour Cross</h5>
+                        <img src="https://img.freepik.com/premium-vector/fashion-minimal-slides-presentation-template_123371-130.jpg" alt="">
+                    </div>
+                    <div class="second item">
+                        <h5>Site de vente de voiture pour Audi</h5>
+                        <img src="https://img.freepik.com/free-vector/flat-driving-school-landing-page-template_23-2149258461.jpg?size=626&ext=jpg&ga=GA1.1.410106095.1694595730&semt=ais" alt="">
+                    </div>
+                </div>
+                <div class="bottomrealisation">
+                    <div class="first item">
+                        <h5>Formation des developppeurs à Numerika</h5>
+                        <img src="https://img.freepik.com/free-photo/college-students-different-ethnicities-cramming_23-2149891341.jpg?size=626&ext=jpg&ga=GA1.1.410106095.1694595730&semt=ais" alt="">
+                    </div>
+                    <div class="second item">
+                        <h5>Site de Business pour flextech</h5>
+                        <img src="https://img.freepik.com/free-vector/gradient-colored-portfolio-template_23-2149215467.jpg?w=900&t=st=1697712987~exp=1697713587~hmac=6a8efd5e600bb7b5a8dd7bc3c6ae85b255712f9fd420143912ce6a768450010e" alt="">
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="pagination">
+                <button  class=" prec" id="afficherBloc1" onclick="afficherBloc(1)"> <i class="fa-solid fa-right-long fa-rotate-180" style="color: #ffffff;"></i> Prec</button>
+                <button  class=" suiv " id="afficherBloc2" onclick="afficherBloc(2)" >  Suiv <i class="fa-solid fa-right-long" style="color: #ffffff;"></i></button>
+            </div>
+            
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+     // Sélectionnez le champ de recherche
+const searchInput = document.getElementById('searchInput');
+
+// Écoutez l'événement "input" lorsqu'une personne tape dans la barre de recherche
+searchInput.addEventListener('input', function () {
+    const filter = searchInput.value.toLowerCase(); // Obtenez la valeur de la recherche en minuscules
+
+    // Sélectionnez tous les éléments avec la classe "item"
+    const items = document.querySelectorAll('.item');
+
+    // Parcourez tous les éléments
+    items.forEach(item => {
+        // Vérifiez si le texte de l'élément contient la chaîne de recherche
+        if (item.textContent.toLowerCase().includes(filter)) {
+            // Si oui, affichez l'élément
+            item.style.display = 'block';
+        } else {
+            // Sinon, masquez l'élément
+            item.style.display = 'none';
+        }
+    });
+});
+
+function afficherBloc(bloc) {
+    if (bloc === 1) {
+        document.getElementById('bloc1').style.display = 'block';  // Affichez le bloc 1
+        document.getElementById('bloc2').style.display = 'none';   // Masquez le bloc 2
+    } else if (bloc === 2) {
+        document.getElementById('bloc1').style.display = 'none';   // Masquez le bloc 1
+        document.getElementById('bloc2').style.display = 'block';  // Affichez le bloc 2
+    }
+}
+
+
+    </script>
     
 </body>
 </html>
