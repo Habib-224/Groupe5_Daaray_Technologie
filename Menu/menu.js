@@ -10,6 +10,7 @@ function afficher(){
 }
 
 function cacher(){
+    // menu.remove('MenuSecBar');
     let menu = document.getElementById('MenuSec');
     let X_Bar = document.getElementById('X_Bar');
     let MenuBarx = document.getElementById("MenuBarx");
