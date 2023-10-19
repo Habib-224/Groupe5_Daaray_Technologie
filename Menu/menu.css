@@ -67,6 +67,15 @@ body{
     height: 80px; /* Spécifiez une hauteur */
 }
 
+.Second_Menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.Second_Menu ul li a:hover{
+    color: darkorange;  
+}
+
 .Second_Menu ul{
     display: flex;
     justify-content: end;
@@ -270,6 +279,15 @@ footer hr{
         align-items: center;
     }
 }
+
+.Container_Footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_Menu a:hover{
+    color: darkorange;
+}
 /* Fin Section Footer */
 
 /* Debut Menu SideBar */
@@ -312,6 +330,42 @@ footer hr{
  #MenuSec ul li a{
      text-decoration: none;
      color: black;
+ }
+
+
+
+ @media screen and (max-width:700px) {
+    .Container_Newsletters{
+        display: flex;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+    }
+    .Section_Newsletter_icone{
+        display: none;
+    }
+
+    .Section_Newsletter_input input{
+        margin-bottom: 10px;
+        max-width: 300px;
+    }
+
+    .Section_Newsletter_input button{
+        display: block;
+        margin: auto;
+    }
+
+    
+
+    .Container_Footer{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+    
  }
 
 /* Fin Section SideBar */
