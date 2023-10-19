@@ -72,6 +72,10 @@ body{
     color: black;
 }
 
+.Second_Menu ul li a:hover{
+    color: darkorange;  
+}
+
 .Second_Menu ul{
     display: flex;
     justify-content: end;
@@ -279,6 +283,10 @@ footer hr{
 .Container_Footer a{
     text-decoration: none;
     color: white;
+}
+
+.footer_Menu a:hover{
+    color: darkorange;
 }
 /* Fin Section Footer */
 
