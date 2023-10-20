@@ -1,3 +1,15 @@
+.container_banner{
+    background-image: url('/public/images/detailservice/flat-lay-business-concept.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blaclist; */
+    /* opacity: 80%; */
+    width: 100%;
+    min-height: 500px;
+    margin-top: 130px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 .hover_text{
     display: none;
     /* width: 100%; */
