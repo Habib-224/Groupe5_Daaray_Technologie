@@ -228,6 +228,28 @@
     margin-top: 40px;
 }
 
+@media screen and (max-width:800px){
+    .Container_Section_Banner .container_banner{
+        background-image:url('../images/libassone.PNG');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 400px;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Container_Section_Banner .container_banner{
+        background-image:url('../images/libassone.PNG');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 300px;
+        margin-top: 70px;
+    }
+}
+
 .Team_Card{
     display: flex;
     justify-content: center;
