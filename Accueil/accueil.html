@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Menu/menu.css">
+    <link rel="stylesheet" href="../public/css/accueil.css">
+    <script src="../Menu/menu.js"></script>
+    <!-- <script src="accueil.js"></script> -->
+</head>
+<style>
+     .Container_Content_filtre p.active{
+    color:#C87065;
+   }
+
+     .FeatureProduct_card.itemBox2{
+     display: none;
+   }
+
+</style>
+<body>
+    <!---------------- Debut Section Container------------------ -->
+    <div class="Section_Container">
+    <!------------- Debut Section Container Menu ------------------->
+        <div class="Container_Menu">
+            <!--------------- Debut Section First Menu ---------------------->
+            <div class="First_Menu">
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;00221774065868</li>
+                    <li><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Dakar Senegal</li>
+                    <li><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;djibysec8@gmail.com</li>
+                    <li><i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-twitter"></i>&nbsp;<i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div>
+            <!--------------------- Fin Section First Menu ----------------------->
+            <!--------------------- Debut Section Second Menu ----------------------->
+            <div class="Second_Menu">
+                <ul>
+                    <li><img src="../public/images/logo.png" alt=""></li>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Formations</a></li>
+                    <li><a href="">Articles</a></li>
+                    <li><a href="">A-Propos</a></li>
+                    <li><a href="">Se connecter</a></li>
+                    <li><i class="fa-solid fa-bars" onclick="afficher()" id="MenuBarx"></i></li>
+                </ul>
+            </div>
+            <div id="MenuSec" >
+                <ul>
+                    <span onclick="cacher()" id="X_Bar"><i class="fa-solid fa-x"></i></span>
+                    <li><a href="Produit/Produit.html">Services</a></li>
+                    <li><a href="">Formations</a></li>
+                    <li><a href="">Artilces</a></li>
+                    <li><a href="">A-Propos</a></li>
+                    <li><a href="Blog/Blog.html">Se Connecter</a></li>
+                </ul>
+            </div>
+        
+            <!----------------------- Fin Section Second Menu-------------------- -->
+            <div class="Container_Section_Banner">
+                <div class="container_banner">
+
+                </div>
+                <span>.</span>
+            </div>
+        </div>
+        <!--------------- Fin Section Container Menu ----------------->
+        <!------------- Debut Section de votre Contenu------------- -->
+        <div class="Container_Content">
+            <div class="Container_Content_Section1">
+                <h3>Ils nous font Confiance</h3>
+                <p>Plus de 200 entreprises et des milliers de participants nous font confiance dans le monde entier</p>
+
+                <div class="Content_Section1_img">
+                    <img src="../public/images/Accueil/saman.PNG" alt="">
+                    <img src="../public/images/Accueil/samane1.PNG" alt="">
+                    <img src="../public/images/Accueil/samane3.PNG" alt="">
+                    <img src="../public/images/Accueil/samane4.PNG" alt="">
+                    <img src="../public/images/Accueil/samane5.PNG" alt="">
+                    <img src="../public/images/Accueil/samane6.PNG" alt="">
+                </div>
+            </div>
+            <br><br>
+
+            <div class="Container_Content_Section2">
+                <h3>Decouvrir la formation</h3>
+                <p>Choisissez parmi plus de 1200 Vidéo de cours . De nouveaux cours sont ajoutés tous les mois</p>
+                <br><br>
+
+                <div class="Container_Section_Cards">
+                    <div class="Container_Section_formation">
+                        <p style="margin-left: -40px;">Formation</p>
+                        <h3 style="text-align: justify;">Cours <br>Populaire</h3>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../public/images/Accueil/web-design.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Web-design</h5>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../public/images/Accueil/react.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">React-js</h5>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a> &nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../public/images/Accueil/graphic.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Graphic-design</h5>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+ 
+            <br></br>
+
+            <div class="Container_Content_Section3">
+                <h3>Explorer Nos différentes formations</h3>
+                <div class="Container_Content_filtre">
+                    <p class="List active" data-filter="All">Voir tout</p>
+                    <p class="List" data-filter="web">Developpement Web</p>
+                    <p class="List" data-filter="design">Web Design</p>
+                    <p class="List" data-filter="graphic">Graphic Design</p>
+                    <p class="List" data-filter="mobile">Mobile</p>
+                </div>
+                <br><br>
+                <div class="Container_Content_Section3_Cards" >
+                    <div class="FeatureProduct_card card" style="width: 18rem;" class="" data-item="web">
+                        <img class="card-img-top" src="../public/images/Accueil/html.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer la formation en html</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div  style="width: 18rem;" class="FeatureProduct_card card" data-item="web">
+                        <img class="card-img-top" src="../public/images/Accueil/angular.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer la formation Angular</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div style="width: 18rem;" class="FeatureProduct_card card" data-item="web">
+                        <img class="card-img-top" src="../public/images/Accueil/react.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer la formation React js</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div style="width: 18rem;" class="FeatureProduct_card card" data-item="design">
+                        <img class="card-img-top" src="../public/images/Accueil/graphic2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>la formation 100% Web design</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div style="width: 18rem;" class="FeatureProduct_card card" data-item="graphic">
+                        <img class="card-img-top" src="../public/images/Accueil/Illustrator.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer Illustrator</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div style="width: 18rem;" class="FeatureProduct_card card" data-item="design">
+                        <img class="card-img-top" src="../public/images/Accueil/figma.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer la formation sur figma</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div style="width: 18rem;" class="FeatureProduct_card card" data-item="web">
+                        <img class="card-img-top" src="../public/images/Accueil/django.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer la formation Django</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div style="width: 18rem;" class="FeatureProduct_card card" data-item="graphic">
+                        <img class="card-img-top" src="../public/images/Accueil/graphic1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer la formation en Design</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div style="width: 18rem;" class="FeatureProduct_card card" data-item="web">
+                        <img class="card-img-top" src="../public/images/Accueil/node js.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer la formation en Node js</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div style="width: 18rem;" class="FeatureProduct_card card" data-item="mobile">
+                        <img class="card-img-top" src="../public/images/Accueil/flutter.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer la formation Flutter</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div style="width: 18rem;" class="FeatureProduct_card card" data-item="web">
+                        <img class="card-img-top" src="../public/images/Accueil/laravel.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer la formation en Laravel</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div style="width: 18rem;" class="FeatureProduct_card card" data-item="graphic">
+                        <img class="card-img-top" src="../public/images/Accueil/photoshop.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-title">Web</p>
+                          <h6>Decouvrer la formation Photoshop</h6>
+                          <div class="Section_Coch">
+                            <span>
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>&nbsp;
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <img src="../public/images/Accueil/coach1.PNG" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+                          </div>
+                          <div class="time">
+                               <span><i class="fa-solid fa-file"></i>&nbsp;&nbsp;05</span>&nbsp;&nbsp;&nbsp;
+                               <span><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;5h 30 mn</span>
+                          </div>
+                          <div class="decouvrir">
+                            <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                            <span><i class="fa-solid fa-message"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let List = document.querySelectorAll('.List');
+            let itemBox = document.querySelectorAll('.FeatureProduct_card');
+            console.log(itemBox);
+            for(let i=0; i<List.length; i++){
+                List[i].addEventListener('click', function(){
+                    for(let j=0; j<List.length; j++){
+                        List[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+                    let dataFilter = this.getAttribute('data-filter');
+
+                    for (let k = 0; k < itemBox.length; k++) {
+                       itemBox[k].classList.remove('active'); // Supprimez la classe 'moi' de tous les éléments
+                       itemBox[k].classList.add('itemBox2'); 
+                       if(itemBox[k].getAttribute('data-item')== dataFilter || dataFilter=="All"){
+                        itemBox[k].classList.remove('itemBox2');
+                         itemBox[k].classList.add('active');
+                       }
+                    }
+                })   
+            }
+            console.log(List.length)
+        </script>
+        <!-- Fin section Formation Card -->
+
+        <div class="Container_Section_Online">
+            <div class="Online_left">
+                <div class="Online_left_img">
+                    <div>
+                        <img src="../public/images/Accueil/online1.jpg" alt="">
+                    </div>
+                    <br>
+                    <div>
+                        <img src="../public/images/Accueil/online2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="Online_left_img_3">
+                    <img src="../public/images/Accueil/online3.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="Online_Right">
+                <p id="formation">Formation</p>
+                <h2>Les Cours en lignes peuvent être adapté aux besoins des apprenants</h2>
+                <p>Grâce à une combinaison de cours magistraux, de lectures et de discussions, les étudiants acquerront une base solide en psychologie éducative.</p>
+                <p>Collection de cours internationaux en 14 langues Meilleures certifications en technologie et en affaires Accès à plus de 35 000 meilleurs cours Eduan, à tout moment et en tout lieu</p>
+                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">Plus de details</button>
+            </div>
+        </div>
+        <!-- Fin Section  -->
+        <div class="Container_Section_Temoignage">
+            <h3>Temoignage</h3>
+            <p id="apprenants">Ce que disent nos Apprenants</p>
+            <div class="Temoignage_Card">
+                <div class="Card_Temoignage">
+                    <div class="Temoignage_img">
+                        <img src="../public/images/Accueil/user1.png" alt="">
+
+                        <p>lobe <br><i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p>"J'ai découvert cette chaîne YouTube de développement il y a quelques mois,
+                        et je suis vraiment impressionné par la qualité du contenu. Les tutoriels
+                        sont clairs, bien expliqués, et m'ont beaucoup aidé à améliorer mes compétences
+                        en programmation."</p>
+                </div>
+                <div class="Card_Temoignage">
+                    <div class="Temoignage_img">
+                        <img src="../public/images/Accueil/user2.png" alt="">
+                        <p>lobe <br><i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p>"J'ai découvert cette chaîne YouTube de développement il y a quelques mois,
+                        et je suis vraiment impressionné par la qualité du contenu. Les tutoriels
+                        sont clairs, bien expliqués, et m'ont beaucoup aidé à améliorer mes compétences
+                        en programmation."</p>
+                </div>
+                <div class="Card_Temoignage">
+                    <div class="Temoignage_img">
+                        <img src="../public/images/Accueil/user3.png" alt="">
+                        <p>lobe <br><i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i>&nbsp;&nbsp;<i class="fa-solid fa-star"></i></p>
+
+                    </div>
+                    <p>"J'ai découvert cette chaîne YouTube de développement il y a quelques mois,
+                        et je suis vraiment impressionné par la qualité du contenu. Les tutoriels
+                        sont clairs, bien expliqués, et m'ont beaucoup aidé à améliorer mes compétences
+                        en programmation."</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="Container_Banner_Stat">
+            <div class="Banner_Stat">
+                <p>stat</p>
+            </div>
+        </div>
+
+        <div class="Container_Section_Team">
+            <h3>Team</h3>
+            <div class="Team_Card">
+                <div class="Card_Team">
+                    <img src="../public/images/Accueil/user1.png" alt="">
+                    <h6>Mariam Sambou</h6>
+                    <p>Full-Stack</p>
+                    <div class="Team_Icone">
+                        <p><i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-twitter"></i>&nbsp;<i class="fa-brands fa-instagram"></i></p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="Card_Team">
+                    <img src="../public/images/Accueil/user2.png" alt="">
+                    <h6>Mariam Sambou</h6>
+                    <p>Full-Stack</p>
+                    <div class="Team_Icone">
+                        <p><i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-twitter"></i>&nbsp;<i class="fa-brands fa-instagram"></i></p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="Card_Team">
+                    <img src="../public/images/Accueil/user2.png" alt="">
+                    <h6>Mariam Sambou</h6>
+                    <p>Full-Stack</p>
+                    <div class="Team_Icone">
+                        <p><i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-twitter"></i>&nbsp;<i class="fa-brands fa-instagram"></i></p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+      
+
+      <!-- Modal -->
+      
+        <!--------------- Fin Section de votre Contenu ---------------->
+        <!-- -------------Debut Section Footer---------------------- -->
+        
+        <footer>
+            <div class="Container_Footer">
+                <div class="Section_Container">
+                    <div class="Container_card">
+                        <img src="../public/images/logo.png" alt="">
+                        <h6>Daaray Technologie</h6>
+                    </div>
+                  
+                </div>
+                <div class="footer_Menu">
+                    <h5>A-propos</h5>
+                    <p><a href="">Qui sommes nous ?</a></p>
+                    <p><a href="">Nous rejoindre ?</a></p>
+                    <p><a href="">Experience de formation</a></p>
+                </div>
+                <div class="footer_Menu">
+                    <h5>Condition</h5>
+                    <p><a href="">Condition d'utilisation</a></p>
+                    <p><a href="">Politique de confidentialité</a></p>
+                    <p><a href="">Politique d'utilisation Cookies</a></p>
+                </div>
+                <div class="footer_Menu">
+                    <h5>Autre</h5>
+                    <p><a href="">Contact</a></p>
+                    <p><a href="">Nos réalisation</a></p>
+                    <p><a href="">Mention Légale</a></p>
+                </div>
+            </div>
+            <div class="Container_Newsletters">
+                <div class="Section_Newsletter_icone">
+                    <i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-twitter"></i>&nbsp;<i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="Section_Newsletter_input">
+                    <input type="text">
+                    <button>S'inscrire</button>
+                </div>
+            </div>
+            <hr>
+            <span class="Copyright">Copyright <i class="fa-solid fa-copyright"></i>  2023 Simplon Education</span><br><br>
+        </footer>
+        <!---------------- Fin Section Footer ----------------->
+    </div>
+    <!-- Fin Section Container --> 
+</body>
+</html>

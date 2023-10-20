@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color : #3E3E3E;
+}
+
+body{
+    background-color: white;
+}
+
+.First_Menu{
+    background-color: var(--main-color);
+    padding: 0.3em;
+    border-bottom: 1px solid darkgray;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.First_Menu ul{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    color: white;
+    list-style: none;
+}
+
+.First_Menu ul li{
+    margin-top: 7px;
+}
+
+.First_Menu ul li:last-child{
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+}
+
+.First_Menu ul li:last-child i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.First_Menu ul li:nth-child(2) i,.First_Menu ul li:nth-child(3) i{
+    padding-left: 0.7em;
+}
+
+.First_Menu ul li:nth-child(2), .First_Menu ul li:nth-child(3){
+    border-left: 2px solid white;
+    /* padding-left: 0.4em; */    
+}
+
+/* Fin First-Menu */
+
+/* Debut Section Second Menu */
+
+.Second_Menu{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: fixed;
+    top: 50px;
+    z-index: 11;
+    width: 100%;
+    height: 80px; /* Spécifiez une hauteur */
+}
+
+.Second_Menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.Second_Menu ul li a:hover{
+    color: darkorange;  
+}
+
+.Second_Menu ul{
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+    color: black;
+    list-style: none;
+    padding: 1.5em;
+    
+}
+
+.Second_Menu ul li:first-child{
+    position: absolute;
+    left: 0;
+    margin-left: 40px;
+}
+
+.Second_Menu ul li:nth-child(7){
+    margin-right: 25px;
+}
+
+.Second_Menu ul li:last-child(7){
+    background-color: #3E3E3E;
+    padding: 0.5em;
+    color: white;
+    width: 180px;
+    text-align: center;
+    margin-top: -4px;
+}
+
+.Second_Menu ul li img{
+    width: 50px;
+    height: 50px;
+    margin-top: -15px;
+}
+
+.Second_Menu ul li:last-child{
+    display: none;
+}
+/* 
+.container_banner{
+    background-image: url('../public/images/libassone.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 130px;
+} */
+
+
+@media screen and (max-width:850px) {
+    .First_Menu{
+        display: none;
+    }
+    .Second_Menu{
+        position: fixed;
+        top: 0;
+    }
+    .Second_Menu ul li{
+        display: none;
+    }
+    .Second_Menu ul li:last-child, .Second_Menu ul li:first-child{
+        display: block;
+    }
+
+    .Second_Menu ul li:last-child{
+        font-size: 30px;
+    }
+
+    .Second_Menu ul li img{
+        margin-top: 0px;
+    }
+
+    .container_banner {
+        min-height: 400px;
+        margin-top: 80px;
+    }
+
+    #MenuSec.MenuSecBar{
+        position: fixed;
+        left: 0;
+        top: 20px;
+        transition: 0.5s;
+        background-color: white;
+        width: 300px;
+        height: 1000px;
+        margin-top: 25px;
+    }
+
+    
+}
+
+@media screen and (max-width:700px){
+    .container_banner{
+        min-height: 250px;
+        margin-top: 80px;
+    }
+}
+
+/* Fin Section Second Menu */
+
+
+
+/* Debut Section Footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #3E3E3E;
+    color: white;
+    margin-top: 250px;
+}
+.Container_Footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Container_Footer .Container_card{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 250px;
+    height: 240px;
+    padding: 5em;
+    position: relative;
+    top: -120px;
+    transform: rotate(-45deg);
+    color: black;
+}
+
+.Container_card img{
+    transform: rotate(45deg);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -20px;
+}
+
+.Container_card h6{
+    transform: rotate(45deg);
+    text-align: justify;
+    position: relative;
+    left: -30px;
+    top: -25px;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.Section_Newsletter_icone i{
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 50%;
+    color: black;
+    margin-right: 10px;
+}
+
+.footer_Menu{
+    padding-top: 4em;
+}
+
+.Container_Newsletters{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Section_Newsletter_input input{
+    width: 420px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.Section_Newsletter_input button{
+    padding: 0.5em;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+footer hr{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.Copyright{
+    display: block;
+    margin: auto;
+    width: 300px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:950px) {
+    .Container_Footer{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.Container_Footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_Menu a:hover{
+    color: darkorange;
+}
+/* Fin Section Footer */
+
+/* Debut Menu SideBar */
+#MenuSec{
+    position: absolute;
+    left: -250px;
+    z-index: 5;
+
+}
+
+#X_Bar{
+    display: none;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+ #MenuSec ul {
+     padding-top: 10em;
+     width: 100%;
+ }
+ #MenuSec ul li{
+     list-style: none;
+     line-height: 40px;
+     padding-left: 5em;
+     width: 100%;
+     font-weight: bold;
+     color: #666666;
+ }
+ 
+ #MenuSec ul li:hover{
+     background-color: #3E3E3E;
+     color: white;
+ }
+
+ #MenuSec ul li a:hover{
+     color: white;
+ }
+ 
+ 
+ #MenuSec ul li a{
+     text-decoration: none;
+     color: black;
+ }
+
+
+
+ @media screen and (max-width:700px) {
+    .Container_Newsletters{
+        display: flex;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+    }
+    .Section_Newsletter_icone{
+        display: none;
+    }
+
+    .Section_Newsletter_input input{
+        margin-bottom: 10px;
+        max-width: 300px;
+    }
+
+    .Section_Newsletter_input button{
+        display: block;
+        margin: auto;
+    }
+
+    
+
+    .Container_Footer{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+    
+ }
+
+/* Fin Section SideBar */
