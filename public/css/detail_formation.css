@@ -65,10 +65,7 @@
 .autre-cours-formations-titre{
     text-align: center;
 }
-.btn-primary-formation{
-    background-color: black;
-    color: var(--seconde);
-}
+
 /* .content1-formation{
     margin-top: 100px;
 } */
@@ -133,3 +130,315 @@
     padding-left: 20px;
     margin-bottom: 73px;
 }
+.content-img-formation img{
+    width: 400px; 
+    height: 300px;
+    margin-top: 120px;
+   
+}
+.btn-primary-formation{
+    background-color: black;
+    color: var(--seconde);
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+/* ******Medias queries********** */
+@media screen  and (max-width:1447px) {
+    .icon-content-pagination-form i{
+        display: none;
+    }
+    .content-img-formation img{
+        width: 300px; 
+        height: 200px;
+    }
+    .card-content-compétences{
+        margin-left: 0;
+        width: 100%;
+    }
+    .card-content-section{
+        width: 100%;
+
+    }
+    .content-relative{
+        display: none;
+    }
+    .card-content-section{
+        background-color: var(--seconde);
+         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+         display: flex;
+         flex-wrap: wrap;
+         padding: 20px 10px;
+         gap: 20px;
+        
+      }
+      .icon-content-pagination-form{
+        display: none;
+
+      }
+      .flexible-autre-cours-content{
+        box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.05);
+        justify-content: center;
+        background-color:rgba(233, 233, 233, 0.663);
+       padding: 20px 10px;
+       gap: 20px;
+       border-radius: 10px;
+       flex-wrap: wrap;
+    }
+    #btn-btn-formation_detail{
+        top: -10px;
+    }
+   
+    
+    
+}
+@media screen  and (max-width:1204px){
+    .content-img-formation img{
+        width: 300px; 
+        height: 200px;
+    }
+
+}
+@media screen  and (max-width:1187px){
+    .content1-formation{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .description-content-form p{
+        display: none;
+    }
+    /* #btn-btn-formation_detail{
+        
+
+    } */
+    .content-img-formation img{
+        width: 300px; 
+        height: 200px;
+    }
+
+}
+@media screen  and (max-width:1100px){
+    .content1-formation{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .description-content-form p{
+        display: none;
+    }
+    #btn-btn-formation_detail{
+        width: 100%;
+
+
+    }
+
+}
+@media screen  and (max-width:665px){
+    .content1-formation{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .description-content-form p{
+        display: none;
+    }
+    #btn-btn-formation_detail{
+        display: none;
+
+
+    }
+    .description-content-form h1{
+        display: none;
+    }
+    .content-img-formation img{
+        margin: 30px auto;
+    }
+    .content-section1{
+        display: block;
+    }
+
+}
+@media screen  and (max-width:577px){
+    .detail-formation-ifram iframe{
+        width: 100%;
+        margin-bottom: 0;
+
+    
+    }
+    .btn-primary-formation{
+        background-color: black;
+        color: var(--seconde);
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content-img-formation img{
+        width: 300px; 
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+        margin-right: 100px;
+     
+    }
+
+}
+@media screen  and (max-width:508px){
+    .detail-formation-ifram iframe{
+        width: 100%;
+        margin-bottom: 0;
+
+    
+    }
+    .btn-primary-formation{
+        background-color: black;
+        color: var(--seconde);
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content-img-formation img{
+        width: 300px; 
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+        margin-right: 50px;
+     
+    }
+
+}
+@media screen  and (max-width:115px){
+    .detail-formation-ifram iframe{
+        width: 100%;
+        margin-bottom: 0;
+
+    
+    }
+    .btn-primary-formation{
+        background-color: black;
+        color: var(--seconde);
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content-img-formation img{
+        width: 300px; 
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+        margin-right: 0px;
+        margin-left: 10px;
+     
+    }
+
+}
+@media screen  and (max-width:397px){
+    .detail-formation-ifram iframe{
+        width: 100%;
+        margin-bottom: 0;
+
+    
+    }
+    .btn-primary-formation{
+        background-color: black;
+        color: var(--seconde);
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content-img-formation img{
+        width: 270px; 
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+        margin-right: 30px;
+        margin-left: 0px;
+     
+    }
+
+}
+@media screen  and (max-width:317px){
+    .detail-formation-ifram iframe{
+        width: 100%;
+        margin-bottom: 0;
+
+    
+    }
+    .btn-primary-formation{
+        background-color: black;
+        color: var(--seconde);
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content-img-formation img{
+        width: 240px; 
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+        margin-right: 20px;
+        margin-left: 0px;
+     
+    }
+
+}
+@media screen  and (max-width:279px){
+    .detail-formation-ifram iframe{
+        width: 100%;
+        margin-bottom: 0;
+
+    
+    }
+    .btn-primary-formation{
+        background-color: black;
+        color: var(--seconde);
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content-img-formation img{
+        width: 240px; 
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+        margin-right: 5px;
+        margin-left: 0px;
+     
+    }
+
+}
+@media screen  and (max-width:238px){
+    .detail-formation-ifram iframe{
+        width: 100%;
+        margin-bottom: 0;
+
+    
+    }
+    .btn-primary-formation{
+        background-color: black;
+        color: var(--seconde);
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content-img-formation img{
+        width: 190px; 
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+        margin-right: 5px;
+        margin-left: 0px;
+     
+    }
+
+}
+
+
