@@ -206,7 +206,16 @@
 
 .Temoignage_img i{
     color: darkorange;
-    font-size: 12px;
+    font-size: 12px; 
+}
+
+.Container_Section_Banner .container_banner{
+    background-image:url('../images/libassone.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 630px;
+    margin-top: 70px;
 }
 
 .Container_Banner_Stat .Banner_Stat{
