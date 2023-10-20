@@ -11,12 +11,17 @@
     <link rel="stylesheet" href="../Menu/menu.css">
     <link rel="stylesheet" href="../public/css/accueil.css">
     <script src="../Menu/menu.js"></script>
+    <script src="accueil.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
     <!-- <script src="accueil.js"></script> -->
 </head>
 <style>
      .Container_Content_filtre p.active{
-    color:#C87065;
-   }
+      color:#C87065;
+     }
 
      .FeatureProduct_card.itemBox2{
      display: none;
@@ -166,10 +171,19 @@
                           </div>
                           <div class="decouvrir">
                             <span><a href="">Decouvrir</a>&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
-                            <span><i class="fa-solid fa-message"></i></span>
+                            <span><i class="fa-solid fa-message" onclick="saisir()"></i></span>
                           </div>
                         </div>
                     </div>
+                    <script>
+                      function saisir(){
+                        let comment = [];
+                        alert("hello")
+                        let x= "je suis la valeur stocké";
+                        comment.push(x);
+                        console.log(x)
+                      }
+                    </script>
                     <div  style="width: 18rem;" class="FeatureProduct_card card" data-item="web">
                         <img class="card-img-top" src="../public/images/Accueil/angular.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -579,9 +593,6 @@
             </div>
         </div>
 
-
-      
-
       <!-- Modal -->
       
         <!--------------- Fin Section de votre Contenu ---------------->
@@ -621,9 +632,12 @@
                 </div>
                 <div class="Section_Newsletter_input">
                     <input type="text">
-                    <button>S'inscrire</button>
+                    <button onclick="inscription()" id="incription1">S'inscrire</button>
                 </div>
             </div>
+            <script>
+              
+            </script>
             <hr>
             <span class="Copyright">Copyright <i class="fa-solid fa-copyright"></i>  2023 Simplon Education</span><br><br>
         </footer>
