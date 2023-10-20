@@ -79,7 +79,7 @@
                     <h6 class="content-relative-article" id="content-relative-article">Education et Tech</h6>
                     <div class="icons-articles">
                         <a href="" style="margin-right: 10px;"><i class="fa-solid fa-circle-info" id="btn-content-article" data-modal="modalOne"></i></a>
-                        <a href="" style="margin-right: 5px;"><i class="fa-solid fa-comment"></i></a>
+                        <a href="" style="margin-right: 5px;" ><i class="fa-solid fa-comment" id="form-btn-btn" data-modalName="modalTwo"  ></i></a>
                     </div>
                 </div>
                 <div class="flexible-img-half">
@@ -123,7 +123,7 @@
                 </div>
 
             </div>
-            <div class="paginations-flexible-content">
+            <div class="paginations-flexible-content" style="padding-bottom: 30px;">
                 <div class="pagination-border-articles"><p><i class="fa-solid fa-arrow-left"></i></p></div>
                 <div class="pagination-border-articles"><p>1</p></div>
                 <div class="pagination-border-articles" id="active-pagination-article"><p>2</p></div>
@@ -202,46 +202,28 @@
                     
 
                 </div>
-                <!-- <form action="/">
-                  <h2>Contacter Nous</h2>
-                  <div>
-                    <input class="fname" type="text" name="name" placeholder="Nom" />
-                    <input type="text" name="name" placeholder="Email" />
-                    <input type="text" name="name" placeholder="Nombre de téléphone" />
-                    <input type="text" name="name" placeholder="Site Web" />
-                  </div>
-                  <span>Message</span>
-                  <div>
-                    <textarea rows="4"></textarea>
-                  </div>
-                  <button type="submit" href="/">Envoyer</button>
-                </form> -->
+               
               </div>
             </div>
           </div>
-          <!-- <div id="modalTwo" class="modal">
-            <div class="modal-content">
-              <div class="contact-form">
-                <span class="close">&times;</span>
+          <div id="modalTwo" class="modalname" style="display: none; ">
+            <div class="modal-contentname" style="background-color: aliceblue; height: 90%; border: 20px solid white; ">
+              <div class="contact-formname">
+                <span class="closename">&times;</span>
                 <form action="/">
-                  <h2>Formulaire de plainte</h2>
-                  <div>
-                    <input class="fname" type="text" name="name" placeholder="Full name" />
-                    <input type="text" name="name" placeholder="Email" />
-                    <input type="text" name="name" placeholder="Phone number" />
-                    <input type="text" name="name" placeholder="Website" />
-                  </div>
                   <span>Message</span>
                   <div>
-                    <textarea rows="4"></textarea>
+                    <input  style="width: 80%; margin-bottom: 10px; margin-top: 60px; padding: 20px 10px; border-radius: 5px;" class="fnamecontent" type="text" name="name" placeholder=" votre pseudo..." />
+                    <textarea  class="fnamecontent" style="width: 80%; margin-bottom: 10px; padding: 20px 10px; border-radius: 5px;"rows="6"></textarea>
                   </div>
-                  <button type="submit" href="/">Submit</button>
+                  <button class="fnamecontent" style="width: 80%; padding: 20px 10px; border-radius: 5px;background-color: black; color: white;" type="submit" href="/">Submit</button>
                 </form>
               </div>
             </div>
-          </div> -->
+          </div>
 
     </div>
+   
     <script>
       let modalBtns = [...document.querySelectorAll("#btn-content-article")];
       modalBtns.forEach(function (btnAll) {
@@ -264,6 +246,36 @@
           event.target.style.display = "none";
         }
       };
+
+
+
+
+      // **********Javascript popup 2**************
+
+      let modalBtnsname = [...document.querySelectorAll("#form-btn-btn")];
+      modalBtnsname.forEach(function (btnAllname) {
+        btnAllname.onclick = function () {
+          event.preventDefault();
+          let modalAll = btnAllname.getAttribute("data-modalName");
+          document.getElementById(modalAll).style.display = "block";
+        };
+      });
+      let closeBtnsname = [...document.querySelectorAll(".closename")];
+      closeBtnsname.forEach(function (btnAllname) {
+        btnAllname.onclick = function () {
+          let modalEl = btnAllname.closest(".modalname");
+          modalEl.style.display = "none";
+        };
+      });
+      window.onclick = function (event) {
+        // event.preventDefault();
+        if (event.target.className === "modalname") {
+          event.target.style.display = "none";
+        }
+      };
+
+
+
     </script>
     </section>
      <!-- -------------Debut Section Footer---------------------- -->
