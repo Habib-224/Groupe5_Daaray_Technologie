@@ -44,7 +44,7 @@
                     <li><a href="../service/service.html">Services</a></li>
                     <li><a href="">Formations</a></li>
                     <li><a href="../articles/article.html">Articles</a></li>
-                    <li><a href="">A-Propos</a></li>
+                    <li><a href="../A_propos/A_propos.html">A-Propos</a></li>
                     <li><a href="">Se connecter</a></li>
                     <li><i class="fa-solid fa-bars" onclick="afficher()" id="MenuBarx"></i></li>
                 </ul>
@@ -55,7 +55,7 @@
                     <li><a href="Produit/Produit.html">Services</a></li>
                     <li><a href="">Formations</a></li>
                     <li><a href="">Artilces</a></li>
-                    <li><a href="">A-Propos</a></li>
+                    <li><a href="../A_propos/A_propos.html">A-Propos</a></li>
                     <li><a href="Blog/Blog.html">Se Connecter</a></li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
         <!--------------- Fin Section Container Menu ----------------->
     <section class="article-content-section">
         <div class="article-content-section1" >
-            <div class="article-content-section1-ban " style="margin-top: 30px;">
+            <div class="article-content-section1-ban">
                 <img src="../public/images/article/ban-arc.png" alt="" >
             </div>
         </div>
@@ -244,14 +244,14 @@
     </div>
     <script>
       let modalBtns = [...document.querySelectorAll("#btn-content-article")];
-      modalBtns.forEach(function (btn) {
-        btn.onclick = function () {
+      modalBtns.forEach(function (btnAll) {
+        btnAll.onclick = function () {
           let modal = btn.getAttribute("data-modal");
           document.getElementById(modal).style.display = "block";
         };
       });
       let closeBtns = [...document.querySelectorAll(".close")];
-      closeBtns.forEach(function (btn) {
+      closeBtns.forEach(function (btnAll) {
         btn.onclick = function () {
           let modal = btn.closest(".modal");
           modal.style.display = "none";
