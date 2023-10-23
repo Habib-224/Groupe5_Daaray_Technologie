@@ -158,10 +158,15 @@
         height: 4vh;
     }
 }
+/* @media (min-width: 770px) and (max-width:841px){
+    .containertemoignage .banniere{
+       margin-top: -50% !important;
+    }
+} */
 @media (min-width: 769px) and (max-width:1200px){
     .containertemoignage .banniere{
-        padding-top: 25%;
-        margin-top: -55%;
+        padding-top: 35%;
+        margin-top: -20%;
     }
     .containertemoignage .banniere .retour{
         margin-top: 15%;
