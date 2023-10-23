@@ -370,16 +370,7 @@ footer hr{
 
 /* Fin Section SideBar */
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
-.container_banner{
-    background-image: url('https://img.freepik.com/photos-gratuite/gros-plan-tablette-dans-mains-femme_273609-15491.jpg?size=626&ext=jpg&uid=R112515192&ga=GA1.1.302796039.1697125308&semt=ais');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* opacity: 80%; */
-    width: 100%;
-    min-height: 500px;
-    margin-top: 130px;
-}
+
 
 @media (min-width:768px) and (max-width: 1024px) {
    /* Ajoutez vos styles existants ici */

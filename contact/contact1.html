@@ -13,23 +13,7 @@
         body{
             box-sizing: border-box;
         }
-        .card1{
-            background-color:#3e3e3e;
-            color: white;
-            font-family: 'Times New Roman', serif;
-            /* border: none; */
-        }
-        .card2{
-            background-image: url(https://img.freepik.com/photos-gratuite/homme-affaires-heureux-occasionnel-parler-au-telephone-fixe-au-bureau-debout-s-appuyant-bureau_231208-2267.jpg?size=626&ext=jpg&uid=R112515192&ga=GA1.1.302796039.1697125308&semt=ais);
-            background-repeat: no-repeat;
-            /* opacity: 80%; */
-            /* filter: blur(10 0 10); */
-        }
-        .card-body11{
-            /* display:contents; */
-            /* border: 1px solid red; */
-            margin-left: 23%;
-        }
+        
     </style>
 </head>
 
@@ -77,66 +61,94 @@
          
       <!--------------- Fin Section Container Menu ----------------->
       <!------------- Debut Section de votre Contenu------------- -->
-      <div class="card" style="margin-top: 15%;">
-        <div class="card-body11">
-            <div class="card1 my-5" style="width: 55%;height:100%;">
-                <div class="card-body">
-                 <h1>Contactez-nous</h1>
-                </div>
+      <div class="container " style="padding-top: 20%;">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card my-5">
+              <div class="card-body" style="background-color: #3e3e3e;color: #ffff;">
+                <h1>Contactez-nous</h1>
               </div>
-              <div class="row" style="" >
-                <div class="card2 col-6 " style="background-color:#d9d9d9;width:32%;margin-left: 40%;margin-top: -11.3%;max-height: 70%;">
-                    <div class="card-body">
-                     <h1 style="text-align:center;color:white;font-weight: bold;">Coordonnees</h1>
-                     <br>
-                     <div class="my-5">
-                        <div class="tel">
-                            <span style="color: #ffff;font-weight: bold;">+221 77-406-58-68</span><span class="mx-5 " style="background-color: #ffff;border-radius: 50%;padding: 5% 7%;"><i class="fa-solid fa-phone fa-beat-fade"></i></span></div>
-                         <br>
-                         <div class="my-5" >
-                            <span style="background-color: #ffff;border-radius: 50%;padding: 5% 7%;"><i class="fa-solid fa-envelope fa-bounce"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffff;font-weight: bold;">djibisec8@gmail.com</span>
-                         </div>
-                         <br>
-                         <div class="my-1"> <span style="color: #ffff;font-weight: bold;">Dakar,Sénégal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mx-5" style="background-color: #ffff;border-radius: 50%;padding: 5% 7%;"><i class="fa-solid fa-location-dot fa-beat"></i></span></div>
-                         <br>
-                         <div class="my-1" style="font-weight: bold;"><span style="background-color: #ffff;border-radius: 50%;padding: 5% 7%;"><i class="fa-regular fa-clock fa-spin fa-spin-reverse"></i></span>&nbsp;&nbsp;<span style="color: #ffff;"> 9:00-18:00</span></div>
-                        </div>
-                        <div class="row" style="color: white;">
-                            <div class="col-1 py-3 "><i class="fa-brands fa-instagram"></i></div>
-                            <div class="col-1 py-3 mx-3"><i class="fa-brands fa-facebook"></i></i>
-                                </div>
-                                <div class="col-1 py-3 mx-1"><i class="fa-brands fa-twitter"></i></div>
-                        </div>
-                     </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card" style="background-image: url(https://img.freepik.com/photos-gratuite/homme-affaires-heureux-occasionnel-parler-au-telephone-fixe-au-bureau-debout-s-appuyant-bureau_231208-2267.jpg?size=820&ext=jpg&uid=R112515192&ga=GA1.1.302796039.1697125308&semt=ais);background-repeat: no-repeat;">
+              <div class="card-body">
+                <h1 style="text-align: center; color: white; font-weight: bold;">Coordonnees</h1>
+                <br>
+                <div class="my-5">
+                  <div class="tel">
+                    <span style="color: white; font-weight: bold;">+221 77-406-58-68</span>
+                    <span class="mx-2" style="background-color: white; border-radius: 50%; padding: 5% 7%;">
+                      <i class="fa-solid fa-phone fa-beat-fade"></i>
+                    </span>
                   </div>
-              </div>
-              <div class="card mx-3" style="width: 38%; margin-top: -37%;">
-                <div class="card-body">
-                    <form id="monFormulaire">
-                        <div class="mb-3">
-                            <label for="exampleInputnom" class="form-label fw-bold">Nom complet :<sup style="color: red;font-size:15px;">*</sup></label>
-                            <input type="nom" class="form-control" id="nom" aria-describedby="nomHelp" required>
-                          </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label fw-bold">Email address:<sup style="color: red;font-size:15px;">*</sup></label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label fw-bold">Message:<sup style="color: red;font-size:15px;">*</sup></label>
-                          <textarea type="password" class="form-control" id="exampleInputPassword1" required></textarea>
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                          <label class="form-check-label fw-bold" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <br>
-                        <button type="submit" class="btn" style="background-color: #3e3e3e;color: white;margin-left: 40%;">Submit</button>
-                      </form>
+                  <br>
+                  <div class="my-5">
+                    <span style="background-color: white; border-radius: 50%; padding: 5% 7%;">
+                      <i class="fa-solid fa-envelope fa-bounce"></i>
+                    </span>
+                    <span style="color: white; font-weight: bold; margin-left: 1rem;">djibisec8@gmail.com</span>
+                  </div>
+                  <br>
+                  <div class="my-1">
+                    <span style="color: white; font-weight: bold;">Dakar, Sénégal</span>
+                    <span class="mx-2" style="background-color: white; border-radius: 50%; padding: 5% 7%;">
+                      <i class="fa-solid fa-location-dot fa-beat"></i>
+                    </span>
+                  </div>
+                  <br>
+                  <div class="my-1" style="font-weight: bold;">
+                    <span style="background-color: white; border-radius: 50%; padding: 5% 7%;">
+                      <i class="fa-regular fa-clock fa-spin fa-spin-reverse"></i>
+                    </span>
+                    <span style="color: white;">9:00-18:00</span>
+                  </div>
+                </div>
+                <div class="row" style="color: white;">
+                  <div class="col-1 py-3">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="col-1 py-3 mx-3">
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div class="col-1 py-3 mx-1">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
                 </div>
               </div>
-        
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card" style="margin-top: 2rem;">
+              <div class="card-body">
+                <form id="monFormulaire">
+                  <div class="mb-3">
+                    <label for="nom" class="form-label fw-bold">Nom complet:<sup style="color: red; font-size: 15px;">*</sup></label>
+                    <input type="text" class="form-control" id="nom" aria-describedby="nomHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">Adresse e-mail:<sup style="color: red; font-size: 15px;">*</sup></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label fw-bold">Message:<sup style="color: red; font-size: 15px;">*</sup></label>
+                    <textarea class="form-control" id="exampleInputPassword1" required></textarea>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label fw-bold" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <br>
+                  <button type="submit" class="btn btn-dark" style="margin-left: 40%;">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      
       <!--------------- Fin Section de votre Contenu ---------------->
       <!-- -------------Debut Section Footer---------------------- -->
       <footer>
