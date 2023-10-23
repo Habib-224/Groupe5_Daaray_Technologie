@@ -101,12 +101,14 @@
 .Container_Section_Online{
     width: 100%;
     height: auto;
-    background-color: #D9D9D9;
+    background-color: white;
     margin-top: 20px;
     display: grid;
     grid-template-columns: 50% 40%;
     justify-content: center;
     padding: 3em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
     /* align-items: center; */
 }
 
@@ -209,13 +211,20 @@
     font-size: 12px; 
 }
 
+.Temoignage_img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
 .Container_Section_Banner .container_banner{
-    background-image:url('../images/libassone.PNG');
+    background-image:url('../images/banner2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 630px;
     margin-top: 70px;
+    /* margin-top: 110px; */
 }
 
 .Container_Banner_Stat .Banner_Stat{
@@ -230,7 +239,7 @@
 
 @media screen and (max-width:800px){
     .Container_Section_Banner .container_banner{
-        background-image:url('../images/libassone.PNG');
+        background-image:url('../images/banner2.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -241,7 +250,7 @@
 
 @media screen and (max-width:600px) {
     .Container_Section_Banner .container_banner{
-        background-image:url('../images/libassone.PNG');
+        background-image:url('../images/banner2.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -270,6 +279,7 @@
     display: block;
     margin: auto;
     padding-top: 3em;
+  
 }
 
 .Card_Team h6{
@@ -301,4 +311,3 @@
     margin-top: 40px;
     margin-bottom: 40px;
 }
-
