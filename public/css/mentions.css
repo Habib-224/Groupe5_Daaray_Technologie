@@ -1,0 +1,11 @@
+.container_banner{
+    background-image: url('https://img.freepik.com/photos-premium/livre-bibliotheque-juge-gavel-manuel-droit-dans-salle-etude-archives-judiciaires-pour-droit-auteur-internat_908985-38286.jpg?size=626&ext=jpg&uid=R112515192&ga=GA1.1.302796039.1697125308&semt=sph');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blaclist; */
+    /* opacity: 80%; */
+    width: 100%;
+    min-height: 500px;
+    margin-top: 130px;
+}

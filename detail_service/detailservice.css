@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Times New Roman' serif;
+}
+.containerdetailservice .banniere{
+    background-image: url(../public/images/detailservice/flat-lay-business-concept.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+.containerdetailservice .banniere .retour{
+    color: white;
+    text-decoration: none;
+    float: left;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+.containerdetailservice .detailservice {
+    /* border: 1px solid red; */
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+.containerdetailservice .detailservice .detailserviceleft{
+    border: 1px solid green;
+    background-color: #3e3e3e;
+    padding-top: 8%;
+    line-height: 3em;
+}
+.containerdetailservice .detailservice .detailserviceleft .active{
+   color:#E94D1A;
+ 
+}
+.containerdetailservice .detailservice .detailserviceright .detailservicerighttop img{
+    width: 100%;
+}
+.containerdetailservice .detailservice .detailserviceright .detailservicerightbottom button{
+    border-radius: 100px;
+    background-color: #3e3e3e;
+    padding: 1% 2%;
+    margin-left: 58%;
+}
+.containerdetailservice .detailservice .detailserviceright .detailservicerightbottom button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* les medias */
+@media (max-width: 768px){
+.containerdetailservice .banniere{
+    padding-top: 35%;
+}
+.containerdetailservice .banniere .retour{
+    margin-top: 25%;
+}
+.containerdetailservice .detailservice {
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 2%;
+}
+.containerdetailservice .detailservice .detailserviceright .detailservicerightbottom button{
+    width: 100%;
+    margin-left: 0;
+}
+
+}

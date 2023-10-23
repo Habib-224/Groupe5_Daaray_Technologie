@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --principal:#3E3E3E;
+    --seconde:#ffff;
+    --trois:#0000;
+}
+.loader {
+    --ballcolor: #E79B30;
+    --shadow: 0px 0 #ffffff00;
+    --shadowcolor: #ffffff00;
+    width: 10px;
+    height: 10px;
+    left: -120px;
+    border-radius: 50%;
+    position: relative;
+    color: var(--ballcolor);
+    animation: shadowRolling 2s linear infinite;
+    margin: 0 auto;
+}
+/* .content-section-cours{
+    margin-top: 100px;
+} */
+.titre-cours-content{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.content-cards-cours{
+    margin-top: 50px;
+
+}
+.card1-formation-detail {
+    max-width: 300px;
+    border-radius: 0.5rem;
+    background-color: var(--seconde);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    margin-top: 20px;
+    margin-left: 20px;
+   
+  }
+  
+  
+  .card1-formation-detail a {
+    text-decoration: none;
+   
+    
+  }
+  
+  
+  .content-description-cours{
+    padding: 1.1rem;
+  }
+  
+  .content-cours-image iframe {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    
+  }
+  
+  .content-cours-title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .content-dsecription-cours {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .action span {
+    transition: .3s ease;
+  }
+  
+  .action:hover span {
+    transform: translateX(4px);
+  }
+  @keyframes shadowRolling {
+
+    0% {
+        box-shadow: var(--shadow),
+            var(--shadow),
+            var(--shadow),
+            var(--shadow);
+    }
+
+    12% {
+        box-shadow: 100px 0 var(--ballcolor),
+            var(--shadow),
+            var(--shadow),
+            var(--shadow);
+    }
+
+    25% {
+        box-shadow: 110px 0 var(--ballcolor),
+            100px 0 var(--ballcolor),
+            var(--shadow),
+            var(--shadow);
+    }
+
+    36% {
+        box-shadow: 120px 0 var(--ballcolor),
+            110px 0 var(--ballcolor),
+            100px 0 var(--ballcolor),
+            var(--shadow);
+    }
+
+    50% {
+        box-shadow: 130px 0 var(--ballcolor),
+            120px 0 var(--ballcolor),
+            110px 0 var(--ballcolor),
+            100px 0 var(--ballcolor);
+    }
+
+    62% {
+        box-shadow: 200px 0 var(--shadowcolor),
+            130px 0 var(--ballcolor),
+            120px 0 var(--ballcolor),
+            110px 0 var(--ballcolor);
+    }
+
+    75% {
+        box-shadow: 200px 0 var(--shadowcolor),
+            200px 0 var(--shadowcolor),
+            130px 0 var(--ballcolor),
+            120px 0 var(--ballcolor);
+    }
+
+    87% {
+        box-shadow: 200px 0 var(--shadowcolor),
+            200px 0 var(--shadowcolor),
+            200px 0 var(--shadowcolor),
+            130px 0 var(--ballcolor);
+    }
+
+    100% {
+        box-shadow: 200px 0 var(--shadowcolor),
+            200px 0 var(--shadowcolor),
+            200px 0 var(--shadowcolor),
+            200px 0 var(--shadowcolor);
+    }
+}
+.icons-comment-cours {
+    display: flex;
+   
+    
+}
+.icons-comment-cours span {
+    width: 25px;
+    height: 25px;
+    background-color: var(--principal);
+    border-radius: 50%;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.icons-comment-cours span i{
+    color: var(--seconde);
+}
+@media screen and (max-width:1260px) {
+    .content-cours-flexible{
+        display: flex;
+       flex-wrap: wrap;
+    
+    }
+    
+}
+@media screen and (max-width:574px) {
+    .content-cours-flexible{
+        display: flex;
+       flex-wrap: wrap;
+    
+    }
+    .cour-img-content img{
+        height: 400px;
+         width: 100%;
+    }
+    
+}
+@media screen and (max-width:348px) {
+    .content-cours-flexible{
+        display: flex;
+       flex-wrap: wrap;
+    
+    }
+    .cour-img-content img{
+        height: 300px;
+         width: 100%;
+    }
+    
+}
+
+  
