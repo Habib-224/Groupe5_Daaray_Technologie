@@ -54,7 +54,20 @@ body{
 }
 
 /* Fin First-Menu */
+              
 
+              
+.rotate {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+              
 /* Debut Section Second Menu */
 
 .Second_Menu{
