@@ -1,12 +1,45 @@
-/* .container_banner{
-    background-image: url('/public/images/detailservice/flat-lay-business-concept.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+.Container_Section_Banner .container_banner{
+    background-image:url('../images/banner2.jpg');
     background-size: cover;
-    width: 100%;
-    min-height: 500px;
-    margin-top: 130px;
-} */
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 630px;
+    margin-top: 70px;
+    /* margin-top: 110px; */
+}
+
+.Container_Banner_Stat .Banner_Stat{
+    /* background-image:url('../images/Accueil/bannierestat.png'); */
+    background-image:url('../images/Accueil/bannierestat.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 450px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:800px){
+    .Container_Section_Banner .container_banner{
+        background-image:url('../images/banner2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 400px;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Container_Section_Banner .container_banner{
+        background-image:url('../images/banner2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 300px;
+        margin-top: 70px;
+    }
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 
